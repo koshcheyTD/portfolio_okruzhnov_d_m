@@ -10,7 +10,8 @@ html, body {
   position: relative;
   width: 100%;
   max-width: 1920px;
-  height: 2424px;
+  height: 100%;
+  min-height: 2424px;
   background: #a4886b;
 }
 html .wraper, body .wraper {
@@ -312,7 +313,10 @@ html .wraper .header .dossier_bg, body .wraper .header .dossier_bg {
 }
 @media (max-width: 835px) {
   html, body {
-    height: 1245px;
+    
+    
+    min-height: 1245px;
+
   }
   html .wraper .header .nav .btn, body .wraper .header .nav .btn {
     padding-top: 25%;
@@ -361,7 +365,8 @@ html .wraper .header .dossier_bg, body .wraper .header .dossier_bg {
 }
 @media (max-width: 630px) {
   html, body {
-    height: 1006px;
+    
+    min-height: 1006px;
   }
   html .wraper .header, body .wraper .header {
     height: 91%;
@@ -422,7 +427,8 @@ html .wraper .header .dossier_bg, body .wraper .header .dossier_bg {
 }
 @media (max-width: 500px) {
   html, body {
-    height: 738px;
+   
+    min-height: 738px;
   }
   html .wraper .header, body .wraper .header {
     height: 95%;
