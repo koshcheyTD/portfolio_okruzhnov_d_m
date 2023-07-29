@@ -1,0 +1,584 @@
+@import '../style/reset.css';
+
+$black: #1A1A1A;
+$green: #96C174;
+$github:#d506ff;
+$gmail:#f72f2f;
+$telegram:#0d89fd;
+$whatsapp:#0acf1b;
+$linkedin:#068fff;
+
+@font-face {
+    font-family: "B52";
+    font-weight: 400;
+    font-style: normal;
+    src: 
+    local("B52"),
+    local("B52"),
+    url(../Fonts/AnyConv.com__B52.woff2) format("woff2"), 
+    url(../Fonts/AnyConv.com__B52.woff) format("woff"),
+    url(../Fonts/AnyConv.com__B52.eot) format("eot");
+    font-display: swap;
+}
+
+html,body{
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 2424px;
+    background: #a4886b;
+    .wraper{
+        background-image: url(../style/img/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .background{
+            opacity: 0;
+        }
+        .header{
+            position: absolute;
+            padding: 3% 3% 0% 2%;
+            width: 100%;
+            max-width: 1588px;
+            height: 1977px;
+            display: flex;
+            justify-content: center;
+            .nav{
+                position: sticky;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                max-width: 60px;
+                height: 770px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 5% 0% 0% 1%;
+                .btn{
+                    width: 190px;
+                    height: 60px;
+                    transform: rotate(-90deg);
+                    background: #E46D65;
+                    border: 3px solid $black;
+                    border-radius: 30px 30px 0px 0px;
+                    filter: drop-shadow(0px -15px 15px rgba(0, 0, 0, 0.5));
+                    font-family: B52;
+                    font-size: 32px;
+                    text-align: center;
+                    top: 3.88%;
+                    left: 8%;
+                    padding-top: 13%;
+                }
+                .dossier_btn{
+                    position: relative;
+                    z-index: 2;
+                    &:hover{
+                        background: #E4C165;
+                        margin-left: -5px;
+                        transition: 0.2s;
+                    }
+                }
+                .portfolio_btn{
+                    position: relative;
+                    z-index: 3;
+                    top: 21%;
+                    &:hover{
+                        background: #E4C165;
+                        margin-left: -5px;
+                        transition: 0.2s;
+                    }
+                }
+                .contacts_btn{
+                    height: 60px;
+                    position: relative;
+                    margin-left: -4px;
+                    z-index: 5;
+                    background: $green;
+                    top: 38.5%;
+                    &:hover{
+                        box-shadow: 0px 0px 10px 0px $black inset;
+                        transition: 0.2s;
+                    }
+                }
+            }
+            .dossier{
+                background-image: url(../style/img/back_paper.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                z-index: 4;
+                width: 100%;
+                max-width: 1500px;
+                height: 1976px;
+                border: 3px solid $black;
+                filter: drop-shadow(0px 0px 15px #000);
+                .contact_span{
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    padding: 10% 10% 0% 10%;
+                    color: $black;
+                    text-align: justify;
+                    font-family: B52;
+                    font-size: 38px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 75px;
+                }
+                .contact_ul{
+                    position: absolute;
+                    top: 25%;
+                    left: 0%;
+                    padding: 10% 10% 0% 10%;
+                    width: 100%;
+                    height: 743px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    .contact_li{
+                        display: flex;
+                        align-items: center;
+                        .contact_github{
+                            fill: $black;
+                            &:hover{
+                                filter: drop-shadow(0px 0px 15px $github);
+                                transition: 0.2s;
+                            }
+                        }
+                        .contact_gmail{
+                            fill: $black;
+                            &:hover{
+                                filter: drop-shadow(0px 0px 15px $gmail);
+                                transition: 0.2s;
+                            }
+                        }
+                        .contact_telegram{
+                            fill: $black;
+                            &:hover{
+                                filter: drop-shadow(0px 0px 15px $telegram);
+                                transition: 0.2s;
+                            }
+                        }
+                        .contact_whatsapp{
+                            fill: $black;
+                            &:hover{
+                                filter: drop-shadow(0px 0px 15px $whatsapp);
+                                transition: 0.2s;
+                            }
+                        }
+                        .contact_linkedin{
+                            fill: $black;
+                            &:hover{
+                                filter: drop-shadow(0px 0px 15px $linkedin);
+                                transition: 0.2s;
+                            }
+                        }
+                        .link{
+                            margin-left: 5%;
+                            color: #1A1A1A;
+                            font-family: B52;
+                            font-size: 38px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-decoration: none;
+                            list-style-type: none;
+                            color: $black;
+                            background-image: linear-gradient(currentColor, currentColor);
+                            background-position: 0% 100%;
+                            background-repeat: no-repeat;
+                            background-size: 0% 4px;
+                            transition: background-size 0.2s;
+                            &:hover {
+                                background-size: 100% 4px;
+                                color: $black;
+                                font-size: 36px;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    max-width: 1920px;
+    height: 299px;
+    background: rgba(#C0C0C0, 0.8);
+    display: grid;
+    grid-template-columns: 76px 91px 76px 92px 94px;
+    grid-template-rows: 95px 34px;
+    gap: 58px 71px;
+    align-content: center;
+    justify-content: center;
+    .icon{
+        align-self: center;
+        .footer_github{
+            fill: $black;
+            &:hover{
+                filter: drop-shadow(0px 0px 15px $github);
+                width: 95%;
+                transition: 0.2s;
+            }
+        }
+        .footer_gmail{
+            fill: $black;
+            &:hover{
+                filter: drop-shadow(0px 0px 15px $gmail);
+                width: 95%;
+                transition: 0.2s;
+            }
+        }
+        .footer_telegram{
+            fill: $black;
+            &:hover{
+                filter: drop-shadow(0px 0px 15px $telegram);
+                width: 95%;
+                transition: 0.2s;
+            }
+        }
+        .footer_whatsapp{
+            fill: $black;
+            &:hover{
+                filter: drop-shadow(0px 0px 15px $whatsapp);
+                width: 95%;
+                transition: 0.2s;
+            }
+        }
+        .footer_linkedin{
+            fill: $black;
+            &:hover{
+                filter: drop-shadow(0px 0px 15px $linkedin);
+                width: 95%;
+                transition: 0.2s;
+            }
+        }
+    }
+    .copy{
+        grid-column: 1 / -1;
+        justify-self: center;
+        color: #1A1A1A;
+        text-align: center;
+        font-family: B52;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: end;
+    }
+    
+}
+
+@media (min-width: 1920px){
+    html,body{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1600px){
+    html,body{
+        
+        .wraper{
+            height: 100%;
+            .header{
+                height: 85%;
+                .nav{
+                    padding-top: 3%;
+                    .btn{
+                        width: 170px;
+                        font-size: 28px;
+                    }
+                    .portfolio_btn{
+                        top: 18%;
+                    }
+                    .contacts_btn{
+                        top: 32.5%;
+                    }
+                }
+                .dossier{
+                    height: 100%;
+                    .contact_ul{
+                        .contact_li{
+                            margin-top: 5%;
+                            .link{
+                                font-size: 29px;
+                                &:hover{
+                                    font-size: 29px;
+                                }
+                            }
+                        }
+                        .github{
+                            margin-top: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .icon{
+            width: 70%;
+            margin-left: 25%;
+        }
+    }
+}
+@media (max-width: 1250px){
+    html,body{
+        .wraper{
+            .header{
+                .dossier{
+                    height: 96%;
+                    .contact_span{
+                        font-size: 29px;
+                    }
+                    .contact_ul{
+                        .contact_li{
+                            a{
+                                svg{
+                                    width: 70%;
+                                }
+                            }
+                            .link{
+                                font-size: 18px;
+                                background-size: 0% 2px;
+                                &:hover{
+                                    font-size: 18px;
+                                    background-size: 100% 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        height: 350px;
+        gap: 58px 40px;
+        .icon{
+            width: 60%;
+            margin-left: 30%;
+            &:hover{
+                width: 59%;
+            }
+        }
+        .copy{
+            font-size: 19px;
+        }
+    }
+}
+@media (max-width: 835px){
+    html,body{
+        height: 1245px;
+        .wraper{
+            .header{
+                .nav{
+                    .btn{
+                        padding-top: 25%;
+                        width: 140px;
+                        font-size: 21px;
+                        border: 1px solid $black;
+                    }
+                    .portfolio_btn {
+                        top: 13.5%;
+                    }
+                    .contacts_btn {
+                        top: 23.5%;
+                    }
+                }
+                .dossier{
+                    height: 95%;
+                    border: 1px solid $black;
+                    .contact_span{
+                        font-size: 20px;
+                        line-height: 55px;
+                    }
+                    .contact_ul{
+                        padding-top: 10%;
+                        top: 31%;
+                        justify-content: start;
+                        .contact_li{
+                            margin-top: 5%;
+                            a{
+                                svg{
+                                    width: 44%;
+                                    height: 44%;
+                                }
+                            }
+                            .link{
+                                margin-left: 0%;
+                                font-size: 14px;
+                                background-size: 0% 2px;
+                                &:hover{
+                                    font-size: 14px;
+                                    background-size: 100% 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        height: 200px;
+        gap: 58px 40px;
+        .icon{
+            width: 60%;
+            margin-left: 25%;
+            &:hover{
+                width: 59%;
+            }
+        }
+        .copy{
+            font-size: 19px;
+        }
+    }
+}
+@media (max-width: 630px){
+    html,body{
+        height: 1006px;
+        .wraper{
+            .header{
+                height: 91%;
+                padding-left: 1%;
+                .nav{
+                    max-width: 45px;
+                    .btn{
+                        padding-top: 13%;
+                        font-size: 21px;
+                        height: 40px;
+                        top: 6%;
+                        left: 20%;
+                    }
+                    .portfolio_btn {
+                        top: 18.5%;
+                    }
+                    .contacts_btn {
+                        top: 31%;
+                    }
+                }
+                .dossier{
+                    height: 91%;
+                    .contact_span{
+                        font-size: 15px;
+                        line-height: 38px;
+                    }
+                    .contact_ul{
+                        padding-top: 10%;
+                        top: 31%;
+                        justify-content: start;
+                        .contact_li{
+                            margin-top: 5%;
+                            a{
+                                svg{
+                                    width: 44%;
+                                    height: 44%;
+                                }
+                            }
+                            .link{
+                                margin-left: 0%;
+                                font-size: 11px;
+                                background-size: 0% 0px;
+                                &:hover{
+                                    font-size: 11px;
+                                    background-size: 0% 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        height: 132px;
+        gap: 22px 0px;
+        .icon{
+            width: 38%;
+            margin-left: 38%;
+            &:hover{
+                width: 38%;
+            }
+        }
+        .copy{
+            font-size: 13px;
+            position: relative;
+            bottom: 50%;
+        }
+    }
+}
+@media (max-width: 500px){
+    html,body{
+        height: 738px;
+        .wraper{
+            .header{
+                height: 95%;
+                .nav{
+                    max-width: 37px;
+                }
+                .dossier{
+                    height: 91%;
+                    .contact_span{
+                        font-size: 11px;
+                        line-height: 35px;
+                    }
+                    .contact_ul{
+                        height: 50%;
+                        padding-top: 20%;
+                        .contact_li{
+                            a{
+                                svg{
+                                    width: 30%;
+                                    height: 30%;
+                                }
+                            }
+                            .link{
+                                margin-left: -5%;
+                                font-size: 10px;
+                                width: 65%;
+                                &:hover{
+                                    font-size: 10px;
+                                    background-size: 0% 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        grid-template-columns: 50px 50px 50px 56px 52px;
+        height: 77px;
+        .icon{
+            width: 30%;
+            height: 30%;
+            position: relative;
+            top: 29%;
+            &:hover{
+                width: 30%;
+            }
+        }
+        .copy{
+            font-size: 9px;
+            bottom: 133%;
+        }
+    }
+}
