@@ -54,7 +54,7 @@ html .wraper .header .nav .btn, body .wraper .header .nav .btn {
   border: 3px solid #1A1A1A;
   border-radius: 30px 30px 0px 0px;
   filter: drop-shadow(0px -15px 15px rgba(0, 0, 0, 0.5));
-  font-family: AnyConv;
+  font-family: B52;
   font-size: 32px;
   text-align: center;
   top: 3.88%;
@@ -122,7 +122,7 @@ html .wraper .header .dossier .portfolio_grid .portfolio_title, body .wraper .he
   grid-column: 1 / -1;
   color: #1A1A1A;
   text-align: center;
-  font-family: AnyConv;
+  font-family: B52;
   font-size: 65px;
   font-style: normal;
   font-weight: 400;
@@ -168,7 +168,7 @@ body .wraper .header .dossier .portfolio_grid .portfolio_card4 .portfolio_link {
   box-shadow: 0px 0px 25px 1px rgba(26, 26, 26, 0.37);
   color: #1A1A1A;
   text-align: center;
-  font-family: AnyConv;
+  font-family: B52;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -254,7 +254,7 @@ html .wraper .header .dossier_bg, body .wraper .header .dossier_bg {
   justify-self: center;
   color: #1A1A1A;
   text-align: center;
-  font-family: AnyConv;
+  font-family: B52;
   font-size: 27px;
   font-style: normal;
   font-weight: 400;
