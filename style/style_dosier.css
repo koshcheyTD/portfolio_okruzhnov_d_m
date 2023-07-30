@@ -1,11 +1,6 @@
+@import url(../style/fonts.css);
 @import url(../style/reset.css);
-@font-face {
-  font-family: "B52";
-  font-weight: 400;
-  font-style: normal;
-  src: local("B52"), local("B52"), url(../Fonts/AnyConv.com__B52.woff2) format("woff2"), url(../Fonts/AnyConv.com__B52.woff) format("woff"), url(../Fonts/AnyConv.com__B52.eot) format("eot");
-  font-display: swap;
-}
+
 html, body {
   position: relative;
   width: 100%;
