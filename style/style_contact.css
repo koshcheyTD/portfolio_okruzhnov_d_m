@@ -484,6 +484,7 @@ html .wraper .header .dossier .contact_ul .contact_li .link:hover, body .wraper 
   }
   html .wraper .header .nav, body .wraper .header .nav {
     max-width: 37px;
+    height: 97%;
   }
   html .wraper .header .dossier, body .wraper .header .dossier {
     height: 91%;
