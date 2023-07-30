@@ -458,9 +458,9 @@ html .wraper .header .dossier .contact_ul .contact_li .link:hover, body .wraper 
     background-size: 0% 0px;
   }
 
-  .footer {
+    .footer {
     height: 132px;
-    gap: 22px 0px;
+    gap: 0px 0px;
   }
   .footer .icon {
     width: 38%;
@@ -472,7 +472,7 @@ html .wraper .header .dossier .contact_ul .contact_li .link:hover, body .wraper 
   .footer .copy {
     font-size: 13px;
     position: relative;
-    bottom: 50%;
+    bottom: 30%;
   }
 }
 @media (max-width: 500px) {
@@ -512,13 +512,14 @@ html .wraper .header .dossier .contact_ul .contact_li .link:hover, body .wraper 
 
   .footer {
     grid-template-columns: 50px 50px 50px 56px 52px;
+    grid-template-rows: 65px 12px;
     height: 77px;
   }
   .footer .icon {
     width: 30%;
     height: 30%;
     position: relative;
-    top: 29%;
+    top: 15%;
   }
   .footer .icon:hover {
     width: 30%;
