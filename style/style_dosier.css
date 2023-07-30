@@ -430,6 +430,7 @@ html .wraper .header .dossier_bg, body .wraper .header .dossier_bg {
   }
   html .wraper .header .nav, body .wraper .header .nav {
     max-width: 37px;
+    height: 97%;
   }
   html .wraper .header .dossier .dossier_grid, body .wraper .header .dossier .dossier_grid {
     grid-template-columns: 130px 106px;
